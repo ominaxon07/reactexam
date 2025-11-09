@@ -1,0 +1,347 @@
+.month-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
+.month-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 45px;
+}
+
+.red-line {
+  width: 20px;
+  height: 40px;
+  background: #db4444;
+  border-radius: 5px;
+}
+
+.month-title {
+  color: #db4444;
+  font-size: 18px;
+  font-weight: 600;
+}
+.month-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 30px;
+}
+
+.month-heading {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.view-btn {
+  background: #db4444;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #c83c3c;
+}
+.month-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.month-card {
+  position: relative;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.month-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #db4444;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+.month-image {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+.like-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #777;
+  transition: 0.2s;
+}
+
+.like-btn:hover {
+  color: #db4444;
+}
+.month-name {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.month-price {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.stars {
+  font-size: 14px;
+  color: gold;
+}
+.month-add {
+  width: 100%;
+  padding: 10px;
+  background: #db4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.month-add:hover {
+  background: #c83c3c;
+}
+.black-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 140px;
+  padding: 60px;
+  background: #000;
+  flex-wrap: wrap;
+}
+
+.black-left {
+  color: white;
+  text-align: left;
+}
+
+.categories-text {
+  color: #00FF00;
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+
+.black-title {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+.timer {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.timer-box {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.buy-btn {
+  background-color: #00FF66;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 15px;
+  width: 171px;
+  height: 56px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.black-right {
+  display: flex;
+  align-items: center;
+}
+
+.black-image {
+  margin-top: -20px;
+}
+@media (max-width: 1330px) {
+  .black-image {
+    display: none;
+  }
+
+  .black-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .black-title {
+    font-size: 40px;
+  }
+
+  .timer {
+    justify-content: center;
+  }
+
+  .buy-btn {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .black-section {
+    padding: 30px 15px;
+  }
+
+  .black-title {
+    font-size: 32px;
+  }
+
+  .timer-box {
+    width: 55px;
+    height: 55px;
+  }
+
+  .timer {
+    gap: 16px;
+  }
+
+  .black-image {
+    width: 350px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .black-section {
+    padding: 20px 10px;
+  }
+
+  .black-title {
+    font-size: 26px;
+  }
+
+  .timer {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .timer-box {
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  .buy-btn {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .black-image {
+    width: 280px;
+  }
+}
+@media (max-width: 390px) {
+  .month-heading {
+    font-size: 18px;
+  }
+
+  .month-cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .month-image {
+    height: 140px;
+  }
+
+  .month-name {
+    font-size: 14px;
+  }
+
+  .month-price {
+    font-size: 13px;
+  }
+
+  .stars {
+    font-size: 12px;
+  }
+
+  .month-add, .view-btn {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .discount-badge {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .like-btn {
+    font-size: 16px;
+  }
+  .black-section {
+    padding: 15px 10px;
+    margin-top: 80px;
+  }
+
+  .black-title {
+    font-size: 24px;
+  }
+
+  .timer {
+    gap: 8px;
+  }
+
+  .timer-box {
+    width: 45px;
+    height: 45px;
+    font-size: 10px;
+  }
+
+  .buy-btn {
+    width: 100%;
+    height: 45px;
+    font-size: 12px;
+  }
+
+  .black-left {
+    text-align: center;
+  }
+
+  .black-right {
+    display: none;
+  }
+}

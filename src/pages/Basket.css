@@ -1,0 +1,122 @@
+.basket-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+.basket-title {
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.no-items {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-top: 50px;
+}
+.basket-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.basket-card {
+  width: 260px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.basket-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.img-container {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.basket-card:hover .img-container img {
+  transform: scale(1.1);
+}
+.basket-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.basket-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.basket-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #db4444;
+}
+
+@media (max-width: 768px) {
+  .basket-card {
+    width: 45%;
+  }
+
+  .basket-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .basket-card {
+    width: 90%;
+  }
+
+  .basket-title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 390px) {
+  .basket-card {
+    width: 100%;
+  }
+
+  .basket-title {
+    font-size: 24px;
+  }
+
+  .basket-info {
+    padding: 10px;
+  }
+
+  .basket-name {
+    font-size: 16px;
+  }
+
+  .basket-price {
+    font-size: 14px;
+  }
+
+  .img-container {
+    height: 200px;
+  }
+}

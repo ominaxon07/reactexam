@@ -1,0 +1,194 @@
+.ourpro-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 60px;
+}
+
+.red-line {
+  width: 20px;
+  height: 40px;
+  background: #db4444;
+  border-radius: 5px;
+}
+
+.section-title {
+  color: #db4444;
+  font-size: 18px;
+  font-weight: 600;
+}
+.section-heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 15px 0 30px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.card {
+  position: relative;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #db4444;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+.card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.like-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #777;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.like-icon:hover {
+  color: #db4444;
+}
+.card-name {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.card-price {
+  font-size: 16px;
+  display: flex;
+  gap: 8px;
+  margin: 5px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.stars {
+  font-size: 14px;
+  color: gold;
+}
+.add-btn {
+  width: 100%;
+  padding: 10px;
+  background: #db4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background: #c83c3c;
+}
+.view-btn {
+  display: block;
+  margin: 40px auto 0;
+  padding: 12px 24px;
+  background: #db4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 24px;
+  }
+
+  .card-image {
+    height: 200px;
+  }
+
+  .add-btn, .view-btn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 20px;
+  }
+
+  .card-image {
+    height: 180px;
+  }
+
+  .add-btn, .view-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 390px) {
+  .section-heading {
+    font-size: 18px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card-image {
+    height: 150px;
+  }
+
+  .card-name {
+    font-size: 15px;
+  }
+
+  .card-price {
+    font-size: 14px;
+  }
+
+  .stars {
+    font-size: 12px;
+  }
+
+  .add-btn, .view-btn {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .discount-badge {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .like-icon {
+    font-size: 16px;
+  }
+}
