@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import {
-  FaHeart,
+import {FaHeart,
   FaShoppingCart,
   FaUserCircle,
   FaUser,
