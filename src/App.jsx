@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { toggleLike, addToCart } from "./redux/shopSlice";
 
 import Navbar from "./components/navbar/Navbar";
 import Like from "./pages/Like";
@@ -37,7 +36,7 @@ export default function App() {
         <Route path="/" element={
           <>
             <Banner/>
-            <Today onLike={(product) => dispatch(toggleLike(product))} onBasket={(product) => dispatch(addToCart(product))}/>
+            <Today/>
             <Category />
             <ThisMonth />
             <OurProduct />
